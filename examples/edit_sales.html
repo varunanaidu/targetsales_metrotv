@@ -1,0 +1,222 @@
+<!--
+=========================================================
+* Paper Dashboard 2 - v2.0.1
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-dashboard-2
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Target Sales
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="main-panel">
+      <!-- Navbar -->
+      
+      <!-- End Navbar -->
+      <div class="content">
+        <h4> Maret 2021 </h4>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"> Panji </h4>
+                <h5 class="card-title"> Target: 5.153.000.000
+                  <div class="float-right"><button id="btn-record"><i class="fa fa-plus"></i>Add Record</button></div>
+                </h5>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th>
+                        Agency 
+                      </th>
+                      <th>
+                        Advertiser
+                      </th>
+                      <th>
+                        Brand
+                      </th>
+                      <th>
+                        Package
+                      </th>
+                      <th>
+                        Notes
+                      </th>
+                      <th>
+                        Progress
+                      </th>
+                      <th>
+                        Status
+                      </th>
+                      <th>
+                        Action
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          GOGO MAll
+                        </td>
+                        <td>
+                          GOGOMEDIA VISINDO
+                        </td>
+                        <td>
+                          GOGOMALL
+                        </td>
+                        <td>
+                          BIS
+                        </td>
+                        <td>
+                          undifined
+                        </td>
+                        <td>
+                          12.000.0000.000
+                        </td>
+                        <td>
+                          INHAND
+                        </td>
+                        <td>
+                          <a href="#"><i class="fa fa-pencil"></i></a>
+                          <a href="#"><i class="fa fa-trash"></i></a>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="card float-right p-3">
+              <p> Total Projection: Inhand: 1358000000 (26%) </p>
+              <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              Potential: 13393000 (1%) </p>
+              <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              Projection: 118719981 (2%) </p>
+            </div>
+          </div>
+
+          <div class="modal fade" id="default-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <form method="POST" id="progress-form" accept-charset="UTF-8">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row clearfix">
+                      <div class="form-group col-md-12">
+                        <label for="level_progress">Agency </label>
+                        <input type="text" class="form-control" id="level_progress" maxlength="100" name="level_progress" value="INTERNATIONAL MATARI ADVERTISING" required>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="level_progress">Advertiser </label>
+                        <input type="text" class="form-control" id="level_progress" maxlength="100" name="level_progress" value="KONIMEX INDONESIA" required>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="level_progress">Brand </label>
+                        <input type="text" class="form-control" id="level_progress" maxlength="100" name="level_progress" value="RENOVIT" required>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="level_progress">Package </label>
+                        <input type="text" class="form-control" id="level_progress" maxlength="100" name="level_progress" value="LOOSE SPOT" required>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="level_notes">Notes</label>
+                        <textarea class="form-control" id="level_notes" name="level_notes" value="" required=""></textarea>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="level_progress">Progress </label>
+                        <input type="number" class="form-control" id="level_progress" maxlength="100" name="level_progress" value="1000000000" required>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="level_progress">Status </label>
+                        <select id="" name="" class="form-control">
+                          <option value="inhand">Inhand</option>
+                          <option value="potential">Potential</option>
+                          <option value="projection">Projection</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <input type="text" class="collapse" name="id_parent" id="id_parent" value="">
+                    <input type="text" class="collapse" name="id_child" id="id_child" value="">
+                    <input type="text" class="collapse" name="level" id="level">
+                    <button type="button" id="btn-submit" class="btn btn-primary">Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer footer-black  footer-white ">
+            <div class="container-fluid">
+              <div class="row">
+
+
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <!--   Core JS Files   -->
+      <script src="../assets/js/core/jquery.min.js"></script>
+      <script src="../assets/js/core/popper.min.js"></script>
+      <script src="../assets/js/core/bootstrap.min.js"></script>
+      <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+      <!--  Google Maps Plugin    -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+      <!-- Chart JS -->
+      <script src="../assets/js/plugins/chartjs.min.js"></script>
+      <!--  Notifications Plugin    -->
+      <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+      <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+      <script src="../assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script><!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+      <script src="../assets/demo/demo.js"></script>
+      <script>
+        $( function(){
+          $('#btn-record').on('click', function () {
+            $('#default-modal').modal('show');
+          });
+          $('#btn-submit').on('click', function () {
+            window.location.href="https://target-sales.metrotv.co.id/examples/edit_sales_new.html";
+          });
+        });
+      </script>
+    </body>
+
+    </html>
